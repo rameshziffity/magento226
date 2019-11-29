@@ -45,7 +45,7 @@ public class DataProvider {
 			wait=new WebDriverWait(driver, 30);
 			
 		} else if (Prop("browser").equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			WebDriverManager.chromedriver().version("77.0.3865.40").setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 			driver = new ChromeDriver(options);
