@@ -85,7 +85,7 @@
 			<version>1.0.5</version>
 			<scope>provided</scope>
 		</dependency>
-	  <dependency>
+		<dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>3.0.0</version>
