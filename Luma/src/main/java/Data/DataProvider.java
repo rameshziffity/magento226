@@ -24,7 +24,8 @@ public class DataProvider {
 		
 		try{
 			Prop = new Properties();
-			file = new FileInputStream("E:\\ZiffityWorkspace\\Luma\\src\\main\\java\\Data\\Data.properties");
+			java.io.File Location=new java.io.File("src/main/java/Data/Data.properties");
+			file = new FileInputStream(Location.getAbsolutePath());
 			Prop.load(file);
 			return Prop.getProperty(value);
 		}
